@@ -1,0 +1,78 @@
+/* =========================
+   register page
+========================= */
+
+.register-page {
+    background: #f5f5f5;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* カード */
+.register-card {
+    width: 600px;
+    background: #fff;
+    padding: 60px 80px;
+}
+
+/* タイトル */
+.register-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* フォーム */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* ボタン */
+.register-button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.register-button:hover {
+    opacity: 0.85;
+}
+
+/* ログインリンク */
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #007bff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* エラー */
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}

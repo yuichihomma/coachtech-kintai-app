@@ -1,0 +1,79 @@
+/* ページ全体 */
+.requests-page {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* タイトル */
+.requests-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* タブ */
+.requests-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.tab.active {
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+/* テーブル枠 */
+.requests-table-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+/* テーブル */
+.requests-table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background: #f7f7f7;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.requests-table th,
+.requests-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.requests-table th {
+    background: #eee;
+    font-weight: bold;
+}
+
+/* 詳細リンク */
+.detail-link {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.detail-link:hover {
+    text-decoration: underline;
+}
+
+/* 空データ */
+.empty {
+    padding: 20px;
+    color: #888;
+}

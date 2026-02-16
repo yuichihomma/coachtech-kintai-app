@@ -1,0 +1,181 @@
+/* =========================
+   Admin Attendance (Figma)
+========================= */
+
+.admin-attendance-page {
+    background: #f2f2f2;
+    min-height: calc(100vh - 80px);
+    padding: 60px 20px;
+}
+
+.admin-attendance-card {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.admin-attendance-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    color: #222;
+}
+
+/* Date Bar */
+.admin-attendance-datebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #fff;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.datebar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.datebar-btn:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.datebar-center {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+}
+
+.datebar-icon {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.datebar-date {
+    letter-spacing: 0.02em;
+}
+
+/* Table */
+.admin-attendance-tablewrap {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.admin-attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.admin-attendance-table thead th {
+    font-size: 13px;
+    font-weight: 700;
+    color: #444;
+    background: #fafafa;
+
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.admin-attendance-table tbody td {
+    font-size: 14px;
+    color: #222;
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.admin-attendance-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Column widths */
+.col-name {
+    width: 28%;
+}
+
+.col-time {
+    width: 14%;
+    text-align: center;
+}
+
+.col-break {
+    width: 14%;
+    text-align: center;
+}
+
+.col-sum {
+    width: 14%;
+    text-align: center;
+}
+
+.col-detail {
+    width: 12%;
+    text-align: center;
+}
+
+.td-time,
+.td-break,
+.td-sum,
+.td-detail {
+    text-align: center;
+}
+
+.detail-link {
+    color: #111;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.detail-link:hover {
+    text-decoration: underline;
+}
+
+.td-empty {
+    text-align: center;
+    padding: 18px 14px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .admin-attendance-page {
+        padding: 30px 12px;
+    }
+
+    .admin-attendance-title {
+        font-size: 18px;
+    }
+
+    .admin-attendance-datebar {
+        padding: 10px 12px;
+    }
+
+    .datebar-btn {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    .admin-attendance-table thead th,
+    .admin-attendance-table tbody td {
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+}

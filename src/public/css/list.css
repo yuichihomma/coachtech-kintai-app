@@ -1,0 +1,131 @@
+/* ===== 全体背景 ===== */
+.attendance-list-page {
+    background: #f2f2f2;
+    min-height: calc(100vh - 80px);
+    /* ヘッダー分は適宜調整 */
+    padding: 40px 20px;
+}
+
+/* ===== 中央の白カード ===== */
+.attendance-list-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px 28px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* タイトル */
+.attendance-list-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+
+/* ===== 月切り替え（Figmaの上のバー） ===== */
+.attendance-month-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    background: #f3f3f3;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+}
+
+.attendance-month-bar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.attendance-month-bar a:hover {
+    text-decoration: underline;
+}
+
+.attendance-month-prev {
+    justify-self: start;
+}
+
+.attendance-month-current {
+    justify-self: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+}
+
+/* カレンダーっぽいアイコン（絵文字で簡易） */
+.attendance-month-current::before {
+    content: "🗓️";
+    font-size: 14px;
+}
+
+.attendance-month-next {
+    justify-self: end;
+}
+
+/* ===== テーブル ===== */
+.attendance-table-wrap {
+    overflow-x: auto;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.attendance-table thead th {
+    background: #f6f6f6;
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.attendance-table tbody td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #ededed;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* 日付は少し左寄せ（見やすく） */
+.attendance-table .col-date {
+    text-align: left;
+    padding-left: 18px;
+    width: 140px;
+}
+
+/* 各列幅（必要なら調整） */
+.attendance-table .col-in,
+.attendance-table .col-out,
+.attendance-table .col-break,
+.attendance-table .col-total {
+    width: 110px;
+}
+
+.attendance-table .col-detail {
+    width: 70px;
+}
+
+/* 詳細リンク */
+.attendance-detail-link {
+    color: #4b2bbf;
+    /* 近い紫 */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attendance-detail-link:hover {
+    text-decoration: underline;
+}

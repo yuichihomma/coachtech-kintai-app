@@ -1,0 +1,69 @@
+/* ===== Admin common ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #f2f2f2;
+    color: #111;
+}
+
+.admin-header {
+    background: #000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-inner {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-logo img {
+    height: 26px;
+    display: block;
+}
+
+.admin-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.admin-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-nav a:hover {
+    text-decoration: underline;
+}
+
+.admin-logout-form button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+
+.admin-logout-form button:hover {
+    text-decoration: underline;
+}
+
+.admin-main {
+    padding: 60px 20px;
+}

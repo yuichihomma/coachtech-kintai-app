@@ -1,0 +1,49 @@
+.admin-login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.admin-login-card {
+    width: 500px;
+    padding: 40px;
+    background: #fff;
+}
+
+.admin-login-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 40px;
+}
+
+.admin-login-button {
+    width: 100%;
+    height: 45px;
+    background: #000;
+    color: #fff;
+    border: none;
+}
+
+/* 全体エラー（ログイン失敗など） */
+.admin-login-error {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+/* 各フィールドエラー */
+.field-error {
+    color: #ff0000;
+    font-size: 13px;
+    margin-top: 6px;
+}

@@ -1,0 +1,167 @@
+/* ===============================
+   ページ全体
+================================= */
+.attendance-detail-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* ===============================
+   タイトル
+================================= */
+.attendance-detail-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    padding-left: 14px;
+    border-left: 4px solid #000;
+}
+
+/* ===============================
+   カード
+================================= */
+.attendance-detail-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* ===============================
+   テーブル
+================================= */
+.attendance-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-detail-table th,
+.attendance-detail-table td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+/* 左ラベル列 */
+.attendance-detail-table th {
+    width: 180px;
+    background: #f5f5f5;
+    text-align: center;
+    color: #555;
+    font-weight: 600;
+}
+
+/* 値は中央寄せ（←理想画像のポイント） */
+.attendance-detail-table td {
+    text-align: center;
+}
+
+/* ===============================
+   time入力
+================================= */
+.attendance-detail-table input[type="time"] {
+    width: 120px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ===============================
+   textarea（申請理由）
+================================= */
+.attendance-detail-table textarea {
+    width: 100%;
+    max-width: 420px;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+/* ===============================
+   承認待ちメッセージ
+================================= */
+.text-danger {
+    margin-top: 16px;
+    color: #e5484d;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* ===============================
+   ボタンエリア
+================================= */
+.attendance-detail-actions {
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ===============================
+   修正申請ボタン
+================================= */
+.btn-edit {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-edit:hover {
+    opacity: 0.85;
+}
+
+/* ===============================
+   レスポンシブ
+================================= */
+@media (max-width: 768px) {
+    .attendance-detail-card {
+        padding: 24px;
+    }
+
+    .attendance-detail-table th {
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .attendance-detail-table td {
+        font-size: 13px;
+    }
+
+    .attendance-detail-table input[type="time"] {
+        width: 100px;
+    }
+}
+
+/* ===============================
+    バリデーションエラー表示
+================================ */
+
+/* エラーメッセージ共通 */
+.text-danger {
+    display: block;
+    text-align: center;
+    color: #e60023;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* フォーム上部の全体エラー */
+form>.text-danger {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* 入力欄の幅を中央に揃える */
+.attendance-detail-table td {
+    text-align: center;
+}

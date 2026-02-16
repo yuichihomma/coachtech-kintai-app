@@ -1,0 +1,59 @@
+/* ページ全体 */
+.admin-staff-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* タイトル */
+.admin-staff-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 4px solid #000;
+}
+
+/* カード */
+.admin-staff-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* テーブル */
+.admin-staff-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-staff-table thead {
+    background-color: #f5f5f5;
+}
+
+.admin-staff-table th,
+.admin-staff-table td {
+    padding: 14px 16px;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* 詳細リンク */
+.detail-link a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.detail-link a:hover {
+    text-decoration: underline;
+}
+
+/* データなし */
+.empty-message {
+    text-align: center;
+    padding: 30px 0;
+    color: #888;
+}

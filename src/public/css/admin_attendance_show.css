@@ -1,0 +1,161 @@
+/* ===============================
+   ページ中央配置
+================================ */
+.attendance-detail-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ===============================
+   タイトル
+================================ */
+.attendance-detail-title {
+    width: 100%;
+    max-width: 880px;
+    margin-bottom: 28px;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 14px;
+    border-left: 4px solid #000;
+}
+
+/* ===============================
+   カード
+================================ */
+.attendance-detail-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ===============================
+   テーブル
+================================ */
+.attendance-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 共通セル */
+.attendance-detail-table th,
+.attendance-detail-table td {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 18px 20px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+/* 見出し：中央寄せ */
+.attendance-detail-table th {
+    width: 180px;
+    background: #f7f7f7;
+    text-align: center;
+    color: #555;
+    font-weight: 600;
+}
+
+/* 値：中央寄せ（←見本どおり） */
+.attendance-detail-table td {
+    text-align: center;
+}
+
+/* ===============================
+   time入力
+================================ */
+.time-input {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.time-sep {
+    margin: 0 8px;
+}
+
+/* ===============================
+   備考
+================================ */
+.note-textarea {
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    resize: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ===============================
+   ボタンエリア
+================================ */
+.detail-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* ===============================
+   ボタン
+================================ */
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+}
+
+.btn-primary {
+    background: #000;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+.btn-disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* ===============================
+   メッセージ
+================================ */
+.alert-success {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: #e6f7ed;
+    color: #1a7f37;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.alert-error {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: #fdecea;
+    color: #b42318;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* フィールドエラー */
+.field-error {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #b42318;
+}
