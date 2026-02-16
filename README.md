@@ -11,14 +11,14 @@
 
 ```bash
 git clone <リポジトリURL>
-cd coachtech--kintai-app
+cd coachtech-kintai-app
 docker-compose up -d --build
 docker-compose exec php bash
 composer install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate
-php artisan db:seed
+php artisan migrate --seed
+
 ```
 
 ---
